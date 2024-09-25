@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "roboto";
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container,
+.cont-nav {
+  width: 1100px;
+  margin: 0px auto;
+}
+.container{
+    margin:60px auto;
+}
+.navbar {
+  background: rgb(57, 161, 245);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 161, 245, 1) 0%,
+    rgba(125, 237, 255, 1) 100%
+  );
+}
+
+.cont-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-nav h2 {
+  color: #ffffff;
+  display: grid;
+  align-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  transition: 0.5s;
+}
+
+h1:hover {
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul li {
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+}
+
+ul li:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(57, 161, 245, 1) 0%,
+    rgba(125, 237, 255, 1) 100%
+  );
+  color: #ffffff;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+}
+
+ul li a:hover {
+  color: #ffffff;
+}
+
+.image {
+  display: flex;
+  margin-top: 50px;
+}
+
+.image img {
+  width: 480px;
+}
+
+.text {
+  display: grid;
+  align-content: center;
+  line-height: 2;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.text h2 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+span {
+  font-size: 17px;
+}
+
+.text a {
+  background: linear-gradient(
+    90deg,
+    rgba(57, 161, 245, 1) 0%,
+    rgba(125, 237, 255, 1) 100%
+  );
+  color: #ffffff;
+  border: 2px solid rgba(125, 237, 255, 1);
+  padding: 3px 20px;
+  justify-self: start;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s;
+  position: relative;
+}
+
+.text a:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: -12px;
+  left: 100px;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.text a:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.text a:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+/* ========
+           About
+        =========== */
+.header {
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.about {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.me {
+  display: grid;
+  align-content: center;
+}
+
+.me p {
+  line-height: 1.5;
+}
+
+/* ========
+        Skills
+        ========== */
+
+.img1 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sk {
+  width: 50%;
+  text-align: center;
+}
+
+.sk h2 {
+  margin: 10px;
+}
+
+.sk img {
+  width: 75%;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+/* =========
+Contact
+============ */
+
+form {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background: linear-gradient(90deg, rgba(57, 161, 245, 1) 0%, rgba(125, 237, 255, 1) 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .icons{
+    text-align: center;
+  }
+
+  .icons i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #1a9fec;
+    text-align: center;
+  }
+
+  .img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  section#contact {
+    text-align: center;
+}
+
+
+  /* footer */
+
+/* .ftr{
+   position:relative;
+   top:500px;
+   
+}
+.ftr img{
+    width:100%;
+} */
+.ftr {
+    background-image: url('images/blob.svg');
+    background-size: 100% auto; /* Set width to 100%, height will scale proportionally */
+    background-position: center top; /* Aligns the image to the top */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 600px; /* Adjust the height based on how much you want to crop */
+    overflow: hidden; /* Ensures that any extra part of the image is hidden */
+}
+
+
